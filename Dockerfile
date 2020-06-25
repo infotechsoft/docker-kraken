@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 # Dependencies
 RUN apt-get update && \
@@ -10,7 +10,7 @@ RUN apt-get update && \
     
 
 ENV JELLYFISH_VERSION=1.1.11 \
-    KRAKEN_VERSION=1.1 \
+    KRAKEN_VERSION=1.1.1 \
     KRAKEN_DB_VERSION=20171019_4GB
     
 ENV JELLYFISH_SRC=http://www.cbcb.umd.edu/software/jellyfish/jellyfish-${JELLYFISH_VERSION}.tar.gz
